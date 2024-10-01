@@ -19,7 +19,7 @@
 - [Contribución y colaboración](#contribución-y-colaboración)
 - [Autores](#autores)
 
-## Introduccion
+## Introducción
 
 En este proyecto vamos a analizar y explorar un set de datos provenientes de ENACOM (ENTE NACIONAL DE COMUNICACIONES) de Argentina.
 Nuestro primer paso sera trabajar con el archivo Internet.xlsx del cual vamos a eliminar y transformar algunas hojas que serán la fuente para nuestro análisis.
