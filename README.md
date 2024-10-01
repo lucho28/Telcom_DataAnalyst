@@ -5,18 +5,18 @@
 ## Tabla de contenidos
 
 - [Introduccion](#introduccion)
-- [Instalación y requisitos](#instalacion-y-requisitos)
+- [Instalación y requisitos](#instalación-y-requisitos)
 - [Fuentes de datos](#fuentes-de-datos)
 - [Glosario](#glosario)
 - [Estructura del proyecto](#estructura-del-proyecto)
-- [Pasos para la instalación](#instalacion-y-pruebas)
+- [Pasos para la instalación](#instalación-y-pruebas)
 - [Herramientas](#herramientas-utilizadas)
-- [Metodología](#metodologia) 
+- [Metodología](#metodología) 
 - [KPI'S](#kpis)
 - [Visualizaciones](#visualizaciones)
 - [Algunas Conclusiones](#algunas-conclusiones)
-- [Informacion de apoyo](#informacion-de-apoyo)
-- [Contribución y colaboración](#contribucion-y-colaboracion)
+- [Informacion de apoyo](#información-de-apoyo)
+- [Contribución y colaboración](#contribución-y-colaboración)
 - [Autores](#autores)
 
 ## Introduccion
