@@ -10,9 +10,11 @@
 - [Glosario](#glosario)
 - [Estructura del proyecto](#estructura-del-proyecto)
 - [Pasos para la instalación](#instalacion-y-pruebas)
+- [Herramientas](#herramientas-utilizadas)
 - [Metodología](#metodologia) 
 - [KPI'S](#kpis)
 - [Visualizaciones](#visualizaciones)
+- [Algunas Conclusiones](#algunas-conclusiones)
 - [Informacion de apoyo](#informacion-de-apoyo)
 - [Contribución y colaboración](#contribucion-y-colaboracion)
 - [Autores](#autores)
@@ -20,11 +22,11 @@
 ## Introduccion
 
 En este proyecto vamos a analizar y explorar un set de datos provenientes de ENACOM (ENTE NACIONAL DE COMUNICACIONES) de Argentina.
-Nuestro primer paso sera trabajar con el archivo Internet.xlsx del cual vamos a eliminar y transformar algunas hojas que seran la fuente para nuestro analisis.
+Nuestro primer paso sera trabajar con el archivo Internet.xlsx del cual vamos a eliminar y transformar algunas hojas que serán la fuente para nuestro análisis.
 
-Como objetivo principal trabajaremos con esta fuente para, mediante un EDA (Analisis Exploratorio de Datos) brindarle a nuestro cliente a traves de un Dashboard la informacion necesaria para conocer los posibles escenarios de inversion, sobre nuevas tecnologias e infrasestruturas.
+Como objetivo principal trabajaremos con esta fuente para, mediante un EDA (Análisis Exploratorio de Datos) brindarle a nuestro cliente a través de un Dashboard la información necesaria para conocer los posibles escenarios de inversión, sobre nuevas tecnologías e infraestructuras.
 
-## Instalacion y requisitos
+## Instalación y requisitos
 
 * Python 3.11 o superior
 * Pandas
@@ -34,12 +36,12 @@ Como objetivo principal trabajaremos con esta fuente para, mediante un EDA (Anal
 
 ## Fuentes de datos
 
-Las fuentes de datos que utilizamos para este proyecto fue seleccionar unicamente el archivo Internet.xlsx de la carpeta Data. 
+Las fuentes de datos que utilizamos para este proyecto fue seleccionar únicamente el archivo Internet.xlsx de la carpeta Data. 
 Los archivos son provistos por ENACOM (Ente Nacional de Comunicaciones) de Argentina.
 
 ## Glosario
 
-Descripcion de las hojas:
+Descripción de las hojas:
 
 * Velocidad % por prov: Distribución porcentual de la velocidad de conexión
 a internet por provincia.
@@ -52,7 +54,7 @@ conexión.
 * Ingresos: Ingresos generados por los servicios de internet en miles de
 pesos.
 
-Definiciones de algunos terminos claves:
+Definiciones de algunos términos claves:
 
 * Accesos: Se refiere al número de conexiones a internet registradas. Estas
 conexiones pueden ser a través de diversas tecnologías como ADSL, fibra
@@ -63,21 +65,29 @@ términos de penetración en la población o en los hogares.
 
 ## Estructura del Proyecto
 
-* En la raiz del repositorio tendran:
-* EDA.ipynb: Archivo que contiene el analisis exploratorio de datos del archivo Internet.xlsx.
+* En la raíz del repositorio tendrán:
+* EDA.ipynb: Archivo que contiene el análisis exploratorio de datos del archivo Internet.xlsx.
 * Data: Carpeta que contiene los archivos provistos por ENACOM. En nuestro caso solo usamos hojas del archivo Internet.xlsx.
-* README.md: Archivo que contiene informacion e indicacion sobre el Proyecto.
-* Internet.pbix: Archivo que contiene el Dashboard realizado en Power BI.  
+* README.md: Archivo que contiene información e indicación sobre el Proyecto.
+* Internet.pbix: Archivo que contiene el Dashboard realizado en Power BI. 
 
-## Instalacion y pruebas
+## Instalación y pruebas
 
 1. Clonar repositorio: git clone https://github.com/lucho28/Telcom_DataAnalyst.git.
 2. Recorrer el archivo EDA.ipynb para mas entendimiento del proyecto.
 3. Ejecutar en Power BI el archivo internet.pbix.
 
-## Metodologia
+## Herramientas utilizadas
 
-La metodologia abordada en este poyecto fue seguir una serie de pasos por cada hoja del archivo Internet.xlsx.
+* Se utilizaron las siguientes herramientas.
+* Visual Studio Code.
+* Github
+* Microsoft Excel
+* Microsoft Power BI
+
+## Metodología
+
+La metodología abordada en este proyecto fue seguir una serie de pasos por cada hoja del archivo Internet.xlsx.
 
 Las hojas que se evaluaron son: 
 
@@ -89,17 +99,17 @@ Las hojas que se evaluaron son:
 * Accesos por velocidad
 * Ingresos
 
-El analisis que se realizo: 
+El análisis que se realizo: 
 
 * Buscar valores nulos.
 * Buscar valores iguales a cero.
 * Buscar valores duplicados. 
-* Buscar valores atipicos.
+* Buscar valores atípicos.
 
-Esto se hizo con cada una de las hojas para luego cerrar con algunas conclusiones y graficos pertinentes.
+Esto se hizo con cada una de las hojas para luego cerrar con algunas conclusiones y gráficos pertinentes.
 
-Los valores atipicos de buscaron mediante graficos (Boxplot). Teniendo en cuenta que era la mejor forma de representarlo.
-Tambien fueron acompañados, en ocasiones, por histogramas y scatterplo teniendo en cuenta que era necesario explicar ciertas disperciones en los datos.
+Los valores atípicos de buscaron mediante gráficos (Boxplot). Teniendo en cuenta que era la mejor forma de representarlo.
+También fueron acompañados, en ocasiones, por histogramas y scatterplot teniendo en cuenta que era necesario explicar ciertas dispersiones en los datos.
 
 ## KPI's
 
@@ -115,45 +125,56 @@ Se realizo un Dashboard interactivo con la herramienta Power Bi. Dejamos el arch
 
 Detalle del Dashboard:
 
-* Velocidad:
-    * Grafico de lineas donde podemos ver la evolucion a traves de los años del acceso por velocidad.
-    * Grafico de barras apiladas al 100% donde nos centramos en las 3 velocidades mas significativas, 10, 20 y 30 Mbps.
+### Velocidad:
 
-    Esta hoja esta filtrada por provincia, trimestre y año.
+* Gráfico de lineas donde podemos ver la evolución a través de los años del acceso por velocidad.
+* Gráfico de barras apiladas al 100% donde nos centramos en las 3 velocidades mas significativas, 10, 20 y 30 Mbps.
 
-    <img src='imagenes/Velocidad.png' />
+Esta hoja esta filtrada por provincia, trimestre y año.
 
-* Tegnologia:
-    * Grafico de lineas que visualizan la evolucion de las 3 tecnologias mas televantes.
-    * Grafico de barras para acompañar y comprender mejor la visualizacion.
+<img src='imagenes/Velocidad.png' />
 
-    Esta hoja contiene un filtro interactivo por provincia.
-    
-    <img src='imagenes/Tecnologia.png' />
+### Tecnología:
 
-* Ingresos: En esta hoja hay 3 graficos de lineas.
-    * Grafico de linea que visualiza los ingresos totales a traves de los años.
-    * Grafico de linea que visualiza los ingresos por 3 tipos de tecnologia. ADSL, Cablemodem y Fibra Optica.
-    * Grafico de linea que visualiza los ingresos de acceso por cada 100 habitantes.
+* Gráfico de lineas que visualizan la evolución de las 3 tecnologías mas relevantes.
+* Gráfico de barras para acompañar y comprender mejor la visualización.
 
-    <img src='imagenes/Ingresos.png' />
+Esta hoja contiene un filtro interactivo por provincia.
+<img src='imagenes/Tecnologia.png' />
 
-* KPI_Penetracion:
-    * Aqui tenemos un KPI que mide el aumento del servicio para el proximo trimestre, cada 100 hogares por provincia. Tiene como objetivo aumentar 2%.
+### Ingresos: En esta hoja hay 3 gráficos de lineas.
 
-    <img src='imagenes/Kpi_Penetracion.png' />
+* Gráfico de linea que visualiza los ingresos totales a través de los años.
+* Gráfico de linea que visualiza los ingresos por 3 tipos de tecnología. ADSL, Cablemodem y Fibra Óptica.
+* Gráfico de linea que visualiza los ingresos de acceso por cada 100 habitantes.
 
-* KPI_Fibra: 
-    * KPI que mide el incremento de la tecnologia Fibra optica con un objetivo del 5% con respecto a las otras tecnologias.
+<img src='imagenes/Ingresos.png' />
 
-    <img src='imagenes/Kpi_Fibra.png' />
+### KPI_Penetracion:
 
-* KPI_Velocidades:
-    * KPI que mide el incremento de la velocidad de 30 Mbps, teniendo como objetivo 10% anual.
+* Aquí tenemos un KPI que mide el aumento del servicio para el próximo trimestre, cada 100 hogares por provincia. Tiene como objetivo aumentar 2%.
 
-    <img src='imagenes/Kpi_Velocidades.png' />
+<img src='imagenes/Kpi_Penetracion.png' />
 
-## Informacion de apoyo
+### KPI_Fibra: 
+
+* KPI que mide el incremento de la tecnología Fibra óptica con un objetivo del 5% con respecto a las otras tecnologias.
+
+<img src='imagenes/Kpi_Fibra.png' />
+
+### KPI_Velocidades:
+
+* KPI que mide el incremento de la velocidad de 30 Mbps, teniendo como objetivo 10% anual.
+
+<img src='imagenes/Kpi_Velocidades.png' />
+
+## Algunas conclusiones
+
+* Después de evaluar los datos provistos por ENACOM podemos ver que existen nichos para explorar posibles escenarios de inversión para nuevas tecnologías. Hay provincias que todavía están adoptando velocidades bajas de internet, y esto comparado con la tendencia general de las otras me hace pensar que debemos estudiar la situación socio-económica de dichas provincias para así ver posibles expansiones.
+
+* Vimos de forma particular que provincias como Tierra del Fuego, San Luis, Chubut, son provincias que no tienen una buena adopcion por fibra, y por ende por velocidades mayores a 30Mbps.
+
+## Información de apoyo
 
 <img src='imagenes/Estadisticas.jpg' />
 
@@ -180,19 +201,19 @@ En Europa y Asia, la fibra óptica ha estado presente desde hace más tiempo, pe
 
 6. Estadísticas en 2023:
 
-    Según datos recientes:
+Según datos recientes:
 
-    Fibra Óptica: Las conexiones con fibra crecieron a una tasa del 30% en  2021, alcanzando más del 50% del mercado en algunas regiones.
-    Cable Modem: Se mantuvo relativamente constante, con una ligera disminución en términos de nuevas conexiones frente a la fibra.
-    Conclusión:
-    La fibra óptica ha emergido como la tecnología dominante de conexión a Internet debido a su velocidad, estabilidad y la inversión en infraestructura que se aceleró desde la pandemia. Por otro lado, el Cable Modem sigue siendo una tecnología importante, aunque ha visto menos crecimiento comparado con la fibra.
+Fibra Óptica: Las conexiones con fibra crecieron a una tasa del 30% en 2021, alcanzando más del 50% del mercado en algunas regiones.
+Cable Modem: Se mantuvo relativamente constante, con una ligera disminución en términos de nuevas conexiones frente a la fibra.
+Conclusión:
+La fibra óptica ha emergido como la tecnología dominante de conexión a Internet debido a su velocidad, estabilidad y la inversión en infraestructura que se aceleró desde la pandemia. Por otro lado, el Cable Modem sigue siendo una tecnología importante, aunque ha visto menos crecimiento comparado con la fibra.
 
 Dispositivos por persona:
 
-Algunos sondeos y relevamientos de datos arrojan que por persona, en Argentina, hay al menos 2 dispositivos.
-Esto tambien depuesta la demanda constante de velocidad, de ancho de banda, y por ende de una infraestructura que la soporte.
+Algunos sondeos y revelamientos de datos arrojan que por persona, en Argentina, hay al menos 2 dispositivos.
+Esto también depuesta la demanda constante de velocidad, de ancho de banda, y por ende de una infraestructura que la soporte.
 
-## Contribucion y colaboracion
+## Contribución y colaboración
 
 Los contribuidores son bienvenidos a reportar problemas, enviar solicitudes de funciones o enviar pull requests en el repositorio de GitHub. Antes de contribuir, por favor revisa las pautas de contribución en el archivo CONTRIBUTING.md.
 
