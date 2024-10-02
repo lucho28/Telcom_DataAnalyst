@@ -67,7 +67,7 @@ términos de penetración en la población o en los hogares.
 
 * En la raíz del repositorio tendrán:
 * EDA.ipynb: Archivo que contiene el análisis exploratorio de datos del archivo Internet.xlsx.
-* Data: Carpeta que contiene los archivos provistos por ENACOM. En nuestro caso solo usamos hojas del archivo Internet.xlsx, Internet_acotado.
+* Data: Carpeta que contiene los archivos provistos por ENACOM. En nuestro caso solo usamos hojas del archivo Internet.xlsx, Internet_acotado. Tambien cuenta con el diccionario de datos.
 * README.md: Archivo que contiene información e indicación sobre el Proyecto.
 * Internet.pbix: Archivo que contiene el Dashboard realizado en Power BI. 
 
